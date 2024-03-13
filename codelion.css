@@ -4,9 +4,11 @@
     font-family: 'Montserrat';
 }
 
-body,h1,h2 {
-    margin:0px;
-    padding:0px;
+body,
+h1,
+h2 {
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -15,29 +17,35 @@ body {
 }
 
 h1 {
-    font-size:36px;
+    font-size: 36px;
     font-weight: bold;
     font-style: italic;
 }
 
 
 h2 {
-    font-size:20px;
-    color:#282828;
+    font-size: 20px;
+    color: #282828;
     font-weight: 300;
     margin-bottom: 16px;
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 5px;
+    transition: font-size 0.5s ease-in-out, color 1s ease-in-out;
+}
+
+h2:hover {
+    font-size: 30px;
+    color: cadetblue;
 }
 
 .name-text {
-    font-size:16px;
-    color:#7c7c7c;
+    font-size: 16px;
+    color: #7c7c7c;
     font-weight: bold;
 }
 
 .about-me-text {
-    font-size:10px;
+    font-size: 10px;
     line-height: 16px;
 }
 
@@ -53,10 +61,19 @@ h2 {
 
 .title-box {
     text-align: right;
+    transition:
+        color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.title-box:hover {
+    color: teal;
+    transform: translate(-500px);
+
+
 }
 
 section {
-    margin-bottom:24px;
+    margin-bottom: 24px;
 }
 
 .float-wrap {
@@ -64,14 +81,14 @@ section {
 }
 
 .title-text {
-    font-size:11px;
+    font-size: 11px;
     font-weight: bold;
     color: #282828;
     float: left;
 }
 
-.year-text{
-    font-size:11px;
+.year-text {
+    font-size: 11px;
     font-weight: bold;
     color: #282828;
     float: right;
@@ -83,17 +100,17 @@ section {
 
 .desc-subtext {
     font-size: 9px;
-    color:#282828;
-    padding-left:16px;
+    color: #282828;
+    padding-left: 16px;
 }
 
 .sns-img {
-    width:12px;
-    height:12px;
+    width: 12px;
+    height: 12px;
 }
 
 .sns-wrap {
-    text-align:right;
+    text-align: right;
 }
 
 footer {
